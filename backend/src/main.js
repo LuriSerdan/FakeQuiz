@@ -6,21 +6,7 @@ app.use(cors());
 
 app.use(express.json());
 
-function shuffle(array) {
-    let currentIndex = array.length;
-  
-    while (currentIndex != 0) {
-  
-      let randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-    return array;
-  }
-
-const MensagemDAO = require('./models/MensagemDAO');
+const MensagemDAO = require('./models/Mensagem');
 
 app.get('/', (req, res) => {
     res.send({
@@ -29,8 +15,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/fakes/get', async (req, res) => {
-    const mensagens = await MensagemDAO.get();
-    res.send(shuffle(mensagens));
+    const limit = req.query.limit || 10
+    const mensagens = await MensagemDAO.get(limit);
+    res.send(mensagens);
 });
 
 
