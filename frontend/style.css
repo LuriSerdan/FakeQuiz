@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+    background: #F6F1E9;
+
+    font-size: 4.0rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 0 30px 0 30px;
+    margin-top: 20px;
+}
+
+nav button {
+    width: 22.9rem;
+    height: 7.1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: 500;
+
+    border-radius: 11px;
+    border: none;
+    background: #CADFD1;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    border: 8px solid #CADFD1;
+    border-radius: 11px;
+
+    padding: 3rem;
+}
+
+.Quiz {
+    display: flex;
+    margin-bottom: 8rem;
+
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.Quiz #p1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.Quiz #p2 {
+    background: #CADFD1;
+    border-radius: 11px;
+
+    margin-left: 3rem;
+}
+
+.container2 button {
+    font-family: "Playfair Display", serif;
+    font-size: 6.4rem;
+    font-weight: 500;
+
+    height: 9.9rem;
+    background: #CADFD1;
+    border: none;
+    border-radius: 11px;
+
+    cursor: pointer
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
