@@ -54,6 +54,7 @@ h1 {
 .container {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     border: 8px solid #CADFD1;
     border-radius: 11px;
@@ -98,4 +99,14 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+.popup {
+    width: 50vw; height: 50vh;
+    position: absolute;
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 11px;
+    transform: translate(-50%, -50%);
+    left: 50%; top: 50%;
 }
